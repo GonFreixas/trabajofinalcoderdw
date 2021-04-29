@@ -1,0 +1,154 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400&display=swap");
+/* line 3, ../../../Proyecto final/Cuarta entrega proyecto final/scss/style.scss */
+body {
+  background-color: #E5E5E5; }
+
+/* line 23, ../../../Proyecto final/Cuarta entrega proyecto final/scss/style.scss */
+header {
+  background: linear-gradient(#151f35, #3a4d78);
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 8px 0px 8px #c7c4c4;
+  justify-self: center; }
+  /* line 35, ../../../Proyecto final/Cuarta entrega proyecto final/scss/style.scss */
+  header .logoM {
+    width: 8em;
+    margin-bottom: 0.2em; }
+  /* line 39, ../../../Proyecto final/Cuarta entrega proyecto final/scss/style.scss */
+  header .nav-link {
+    color: #E5E5E5;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    margin-left: 1em; }
+  /* line 45, ../../../Proyecto final/Cuarta entrega proyecto final/scss/style.scss */
+  header .navbar-toggler {
+    border-color: #EBC668; }
+
+/* line 53, ../../../Proyecto final/Cuarta entrega proyecto final/scss/style.scss */
+.mainInicio {
+  width: 100%;
+  padding: 1.8em 0 1.8em 0;
+  justify-content: center; }
+  /* line 57, ../../../Proyecto final/Cuarta entrega proyecto final/scss/style.scss */
+  .mainInicio #carouselExampleControls {
+    width: 80%; }
+    /* line 59, ../../../Proyecto final/Cuarta entrega proyecto final/scss/style.scss */
+    .mainInicio #carouselExampleControls .carousel-inner {
+      border-radius: 1em;
+      box-shadow: 8px 0px 8px #c7c4c4; }
+      /* line 62, ../../../Proyecto final/Cuarta entrega proyecto final/scss/style.scss */
+      .mainInicio #carouselExampleControls .carousel-inner .carousel-item {
+        margin: 5px; }
+  /* line 67, ../../../Proyecto final/Cuarta entrega proyecto final/scss/style.scss */
+  .mainInicio .tituloInicio {
+    margin: 0.8em 0 0 8em;
+    color: #1D314D;
+    font-family: "Montserrat", sans-serif;
+    font-weight: regular;
+    font-size: 1.3em; }
+  /* line 77, ../../../Proyecto final/Cuarta entrega proyecto final/scss/style.scss */
+  .mainInicio .textoInicio {
+    margin: 0.5em 0 0 10.3em;
+    color: #1D314D;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em; }
+  /* line 83, ../../../Proyecto final/Cuarta entrega proyecto final/scss/style.scss */
+  .mainInicio .serviciosInicio {
+    margin: 1.3em 0 0 10.3em;
+    justify-content: space-between; }
+    /* line 87, ../../../Proyecto final/Cuarta entrega proyecto final/scss/style.scss */
+    .mainInicio .serviciosInicio .tarjetaInicio {
+      border-radius: 1em;
+      box-shadow: 8px 0px 8px #c7c4c4;
+      background-color: #1D314D;
+      color: #EBC668;
+      font-family: 'Montserrat', sans-serif;
+      border-style: none;
+      text-decoration: none;
+      max-width: 16rem;
+      padding: 0;
+      margin-left: 1.15em; }
+      /* line 93, ../../../Proyecto final/Cuarta entrega proyecto final/scss/style.scss */
+      .mainInicio .serviciosInicio .tarjetaInicio .card-img-top {
+        border-radius: 1em;
+        width: 16rem; }
+      /* line 97, ../../../Proyecto final/Cuarta entrega proyecto final/scss/style.scss */
+      .mainInicio .serviciosInicio .tarjetaInicio .card-text {
+        text-decoration: none;
+        color: #EBC668; }
+
+/* line 108, ../../../Proyecto final/Cuarta entrega proyecto final/scss/style.scss */
+footer {
+  margin-top: 1.5em;
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(#3a4d78, #151f35);
+  color: #EBC668;
+  display: flex;
+  flex-direction: row;
+  background-color: #1D314D;
+  min-height: 80px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1.5em; }
+  /* line 121, ../../../Proyecto final/Cuarta entrega proyecto final/scss/style.scss */
+  footer .logoSocial {
+    margin-left: 1em; }
+
+/* line 125, ../../../Proyecto final/Cuarta entrega proyecto final/scss/style.scss */
+.mainServicios {
+  height: 36em;
+  margin-top: 1.5em;
+  margin-left: 25em;
+  margin-bottom: 1.5em;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 230px 30px 230px 30px;
+  grid-row-gap: 12px;
+  grid-column-gap: 20px;
+  grid-template-areas: "muebles restauracion" "tituloMuebles tituloRestauracion" "remodelacion obras" "tituloRemodelacion tituloObras"; }
+  /* line 141, ../../../Proyecto final/Cuarta entrega proyecto final/scss/style.scss */
+  .mainServicios .muebles {
+    grid-area: muebles;
+    background-color: white;
+    border-radius: 0.6em;
+    background-image: url("../media/muebles a medida.jpg");
+    background-size: cover; }
+  /* line 148, ../../../Proyecto final/Cuarta entrega proyecto final/scss/style.scss */
+  .mainServicios .tituloServicios {
+    font-family: "Montserrat", sans-serif;
+    color: #1D314D; }
+    /* line 151, ../../../Proyecto final/Cuarta entrega proyecto final/scss/style.scss */
+    .mainServicios .tituloServicios a {
+      background-color: #EBC668;
+      color: #1D314D;
+      border-radius: 4px;
+      padding: 0.2em; }
+  /* line 155, ../../../Proyecto final/Cuarta entrega proyecto final/scss/style.scss */
+  .mainServicios .restauracion {
+    grid-area: restauracion;
+    background-color: white;
+    border-radius: 0.6em;
+    background-image: url("../media/restaurado.jpg");
+    background-size: cover; }
+  /* line 162, ../../../Proyecto final/Cuarta entrega proyecto final/scss/style.scss */
+  .mainServicios .remodelacion {
+    grid-area: remodelacion;
+    background-color: white;
+    border-radius: 0.6em;
+    background-image: url("../media/remodelaciones.jpg");
+    background-size: cover; }
+  /* line 169, ../../../Proyecto final/Cuarta entrega proyecto final/scss/style.scss */
+  .mainServicios .obras {
+    grid-area: obras;
+    background-color: white;
+    border-radius: 0.6em;
+    background-image: url("../media/pequeñas obras.jpg");
+    background-size: cover; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,176 @@
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+body{
+	background-color:$colorGris;
+}
+@mixin botones{
+	background-color:$colorDorado;
+	color:$colorAzul;
+	border-radius:4px;
+	padding:0.2em;
+}
+@mixin tarjetas{
+	border-radius: 1em;
+	box-shadow: $sombraCard;
+	background-color: $colorAzul;
+	color:$colorDorado;
+	font-family: 'Montserrat', sans-serif;
+	border-style: none;
+	text-decoration: none;
+
+
+}
+header{
+	background:$gradiente1;
+	min-height:80px;
+	display:flex;
+	align-items:center;
+	justify-content: space-around;
+	width: 100%;
+	border-radius: 0 0 12px 12px;
+	box-shadow: $sombraCard;
+	justify-self: center;
+
+	
+	.logoM{
+		width: 8em;
+		margin-bottom:0.2em;
+	}
+	.nav-link{
+		color:$colorGris;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1.2em;
+		margin-left: 1em;
+		}
+	.navbar-toggler{
+		
+		border-color:$colorDorado;
+		
+	}	
+
+}
+
+.mainInicio{
+	width: 100%; 
+	padding: 1.8em 0 1.8em 0;
+	justify-content: center;
+	#carouselExampleControls{
+	width: 80%;
+		.carousel-inner{
+		border-radius: 1em;
+		box-shadow: $sombraCard;
+			.carousel-item{
+				margin: 5px;
+				}
+			}
+		}		
+	.tituloInicio{
+		margin:0.8em 0 0 8em;
+		color:$colorAzul;
+		font-family: $fuente;
+		font-weight: regular;
+		font-size: 1.3em;
+
+
+	}
+		
+	.textoInicio{
+		margin:0.5em 0 0 10.3em;
+		color:$colorAzul;
+		font-family: $fuente;
+		font-size: 1em;
+	}
+	.serviciosInicio{
+		margin:1.3em 0 0 10.3em;
+		justify-content: space-between;
+
+		.tarjetaInicio{
+		@include tarjetas;
+		max-width: 16rem;
+		padding:0;
+		margin-left:1.15em;
+
+			.card-img-top{
+		 	border-radius:1em;
+		 	width: 16rem;
+			}
+			.card-text{
+				text-decoration: none;
+				color:$colorDorado;
+			}
+
+		}
+	}	
+	
+}
+
+
+footer{
+	margin-top:1.5em;
+	font-family: $fuente;
+	background: $gradiente2;
+	color: $colorDorado;
+	display: flex;
+	flex-direction: row;
+	background-color:#1D314D;
+	min-height: 80px;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin-top:1.5em;
+		.logoSocial{
+		margin-left:1em;
+		}
+}
+ .mainServicios{
+	height:36em;
+	margin-top: 1.5em;
+	margin-left: 25em;
+	margin-bottom: 1.5em;
+	display: grid;
+	grid-template-columns:40% 40%;
+	grid-template-rows: 230px 30px 230px 30px;
+	grid-row-gap: 12px;
+	grid-column-gap: 20px;
+	grid-template-areas:
+	"muebles restauracion"
+	"tituloMuebles tituloRestauracion"
+	"remodelacion obras"
+	"tituloRemodelacion tituloObras";
+	
+		.muebles{
+		grid-area: muebles;
+		background-color:white;
+		border-radius: 0.6em;
+		background-image:url("../media/muebles a medida.jpg");
+		background-size:cover;
+		}
+		.tituloServicios{
+		font-family:$fuente;
+		color:$colorAzul;
+			a{
+				@include botones;
+			}	
+		}
+		.restauracion{
+		grid-area: restauracion;
+		background-color:white;
+		border-radius: 0.6em;
+		background-image:url("../media/restaurado.jpg");
+		background-size:cover;
+		}
+		.remodelacion{
+		grid-area: remodelacion;
+		background-color:white;
+		border-radius: 0.6em;
+		background-image:url("../media/remodelaciones.jpg");
+		background-size:cover;
+		}
+		.obras{
+		grid-area:obras;
+		background-color: white;
+		border-radius: 0.6em;
+		background-image:url("../media/pequeñas obras.jpg");
+		background-size:cover;
+		}
+	}	
