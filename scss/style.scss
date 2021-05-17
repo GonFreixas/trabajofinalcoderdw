@@ -13,6 +13,7 @@ body{
 	box-shadow:$sombraCard;
 	font-weight: $fuenteBold;
 	border-style: none;
+	text-decoration:none;
 }
 
 @mixin tarjetas{
@@ -80,7 +81,6 @@ header{
 					}
 				}
 				#dropdownMenuLink{
-					background: none;
 					border-style:none;
 					color:$colorGris;
 					font-family: 'Montserrat', sans-serif;
@@ -111,6 +111,9 @@ header{
 							color:$colorGris;
 						}
 					}
+				}
+				#dropdownMenuLink .dropdown .show .dropdown-item{
+					color:$colorAzul;
 				}					
 				.navbar-toggler{
 					opacity:30%;
@@ -225,6 +228,7 @@ footer{
 					}
 					.card-text:hover{
 						font-size: 1.1em;
+						text-decoration:none;
 					}
 
 				}
@@ -305,9 +309,10 @@ footer{
 	}
 	.botoneraServicios{
 		margin-top: 2em;
+		text-decoration:none;
 		.row{
 			display:flex;
-			justify-content: center; 
+			justify-content: center;
 			.botonServicios{
 				@include botones;
 				padding:0.5em;
@@ -315,6 +320,7 @@ footer{
 			}
 			.botonServicios:hover{
 				scale:1.1;
+				text-decoration:none;
 			}
 		}
 	}		
@@ -360,7 +366,8 @@ footer{
 		}
 		.form-control{
 			box-shadow: $sombraInset;
-			border-style:none;	
+			border-style:none;
+
 		}
 		label{
 			font-family: $fuente;
@@ -378,6 +385,9 @@ footer{
 			li p{
 				font-size: 0.9em;	
 			}		
+		}
+		md-form{
+			resize: none;
 		}
 	}
 }
